@@ -1,0 +1,45 @@
+{
+  "name": "@nenrin/record-core",
+  "version": "0.1.0",
+  "description": "制作ツール上の作業過程を端末内でハッシュチェーンとして記録し、外部アンカーで事後の改変を検知可能にするライブラリ。NENRIN の記録コア。",
+  "type": "module",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nibura2002/nenrin-core"
+  },
+  "homepage": "https://nenrinapp.com",
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./engine": "./src/engine.js",
+    "./chain": "./src/chain.js",
+    "./verify": "./src/verify.js",
+    "./summary": "./src/summary.js",
+    "./keys": "./src/keys.js",
+    "./canonical": "./src/canonical.js",
+    "./card": "./src/card.js",
+    "./identity": "./src/identity.js",
+    "./auth": "./src/auth.js",
+    "./platform": "./src/platform.js",
+    "./dev/simulator": "./src/dev/simulator.js",
+    "./dev/tamper": "./src/dev/tamper.js"
+  },
+  "files": [
+    "src",
+    "test",
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "README.ja.md",
+    "NETWORK.md",
+    "SECURITY.md",
+    "TRADEMARK.md"
+  ],
+  "scripts": {
+    "test": "node --test \"test/**/*.test.mjs\""
+  }
+}

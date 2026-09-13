@@ -1,0 +1,15 @@
+{
+  "name": "@nenrin/verify-core",
+  "version": "0.1.0",
+  "description": "NENRIN の検証ロジック(サーバー側)— 提出されたチェーンとアンカーの控えを検証し、WorkSummary を導出する。record-core の verify.js と対をなす TypeScript 実装。",
+  "type": "module",
+  "license": "Apache-2.0",
+  "repository": { "type": "git", "url": "https://github.com/nibura2002/nenrin-core" },
+  "engines": { "node": ">=22" },
+  "exports": {
+    "./verify": "./src/verify.ts",
+    "./summary": "./src/summary.ts",
+    "./crypto": "./src/crypto.ts"
+  },
+  "files": ["src", "LICENSE", "README.md", "README.ja.md"]
+}
